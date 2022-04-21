@@ -1,0 +1,102 @@
+/*VARIABLES*/
+header {
+  background-color: #000;
+  top: 0;
+  z-index: 100;
+}
+
+header .navbar-dark .navbar-nav .nav-link {
+  color: aliceblue;
+  font-size: 1.5rem;
+  margin: 0px 15px;
+}
+
+header .navbar-dark .navbar-nav .nav-link .img-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  justify-self: flex-start;
+}
+
+header .navbar-dark .navbar-nav .nav-link .navbar-collapse {
+  -webkit-box-flex: initial;
+      -ms-flex-positive: initial;
+          flex-grow: initial;
+}
+
+/*PAGINA PRINCIPAL CON FOTO*/
+.larenga__principal {
+  background-image: url(../img/rengainicio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.larenga__principal .container-titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.larenga__principal .container-titulo .titulo_principal {
+  color: #742112;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 5px 2px #050505;
+  letter-spacing: 5px;
+  padding-top: 15px;
+}
+
+/*REDES SOCIALES */
+.bar-social {
+  position: fixed;
+  right: 0;
+  top: 40%;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  z-index: 100;
+}
+
+.bar-social .icon {
+  color: darkblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  padding: .5rem;
+}
+
+.bar-social .icon .icon-facebook {
+  background-color: azure;
+  border-radius: 1rem 0 0 0;
+}
+
+.bar-social .icon .icon-instagram {
+  background-color: azure;
+}
+
+.bar-social .icon .icon-youtube {
+  background-color: azure;
+}
+
+.bar-social .icon .icon-spotify {
+  background-color: azure;
+  border-radius: 0 0 0 1rem;
+}
+/*# sourceMappingURL=main.css.map */

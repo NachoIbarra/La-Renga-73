@@ -1,0 +1,77 @@
+@import "variables";
+
+header {
+    background-color: #000;
+    top: 0;
+    z-index: 100;
+    .navbar-dark .navbar-nav .nav-link {
+        color: aliceblue;
+        font-size: 1.5rem;
+        margin: 0px 15px; 
+        .img-logo {
+            display: flex;
+            width: 100px;
+            justify-self:flex-start ;
+        }
+        .navbar-collapse {
+            flex-grow: initial;
+        }
+    }
+}
+
+/*PAGINA PRINCIPAL CON FOTO*/
+.larenga__principal {
+    background-image: url(../img/rengainicio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    .container-titulo {
+        display: flex;
+        justify-content: center;
+        .titulo_principal {
+            color: $colorTitulo;
+            font-family: $fontPrincipal;
+            font-size: 50px;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 2px 5px 2px #050505;
+            letter-spacing: 5px;
+            padding-top: 15px;
+        }
+    }
+}
+
+
+    /*REDES SOCIALES */
+.bar-social {
+    position: fixed;
+    right: 0;
+    top: 40%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+    .icon {
+        color: darkblue;
+        display: flex;
+        text-decoration: none;
+        padding: .5rem;
+        .icon-facebook {
+            background-color: azure;
+            border-radius: 1rem 0 0 0 ;
+        }
+        .icon-instagram {
+            background-color: azure;
+            
+        }
+        .icon-youtube {
+            background-color: azure;
+        }
+        .icon-spotify {
+            background-color: azure;
+            border-radius: 0 0 0 1rem;
+        }
+    }
+}
