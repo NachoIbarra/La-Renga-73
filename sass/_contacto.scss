@@ -1,0 +1,8 @@
+/*CONTACTO*/
+.btn1{
+    color: white;
+    font-family: $fontPrincipal;
+}
+.btn2{
+    @extend .btn1;
+}

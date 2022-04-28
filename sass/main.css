@@ -1,4 +1,9 @@
-/*VARIABLES*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*PARA TODAS LAS PAGINAS*/
 header {
   background-color: #000;
   top: 0;
@@ -23,35 +28,6 @@ header .navbar-dark .navbar-nav .nav-link .navbar-collapse {
   -webkit-box-flex: initial;
       -ms-flex-positive: initial;
           flex-grow: initial;
-}
-
-/*PAGINA PRINCIPAL CON FOTO*/
-.larenga__principal {
-  background-image: url(../img/rengainicio.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-}
-
-.larenga__principal .container-titulo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.larenga__principal .container-titulo .titulo_principal {
-  color: #742112;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 50px;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 2px 5px 2px #050505;
-  letter-spacing: 5px;
-  padding-top: 15px;
 }
 
 /*REDES SOCIALES */
@@ -97,6 +73,298 @@ header .navbar-dark .navbar-nav .nav-link .navbar-collapse {
 
 .bar-social .icon .icon-spotify {
   background-color: azure;
-  border-radius: 0 0 0 1rem;
+  border-radius: 1rem 0 0 0;
+}
+
+/*DISCOGRAFIA*/
+.disc-new {
+  background-color: aliceblue;
+  border: 5px;
+  border-color: blue;
+}
+
+/*GALERIA*/
+.gallery {
+  background-color: #000;
+}
+
+.gallery .gallery__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 250px;
+  grid-gap: 8px;
+  grid-auto-flow: dense;
+  min-height: 100vh;
+  margin: 20px;
+  margin-bottom: 100px;
+}
+
+.gallery .gallery__container :nth-child(1), .gallery .gallery__container :nth-child(3) {
+  grid-row: span 2;
+}
+
+.gallery .gallery__container :nth-child(2) {
+  grid-column: span 2;
+}
+
+.gallery .gallery__container :nth-child(8) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.gallery .gallery__container .gallery__item {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: #ffd900;
+}
+
+.gallery .gallery__container .gallery__item-image {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery .gallery__container .gallery__item-image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+
+.gallery .gallery__container .gallery__item-image img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+/*HISTORIA*/
+.historia {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: azure;
+}
+
+.historia .frase__historia {
+  color: #742112;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding: 15px 0 20px 0;
+  margin-bottom: 30px;
+}
+
+.historia .members__class {
+  width: 100%;
+  height: 60vh;
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.historia .members__class img {
+  border-radius: 15%;
+  width: 40%;
+  height: auto;
+  padding: 50px;
+}
+
+.historia .member__info {
+  margin: auto 0;
+  width: 50%;
+}
+
+.historia .member__info p {
+  font-size: 35px;
+  color: azure;
+  text-align: justify;
+}
+
+.historia .member__info h3 {
+  font-size: 55px;
+  color: azure;
+}
+
+.historia p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.historia .members__class2 {
+  background-color: black;
+  width: 100%;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.historia .members__class2 img {
+  border-radius: 15%;
+  width: 40%;
+  height: auto;
+  padding: 50px;
+}
+
+.historia .member__info2 {
+  margin: auto 0;
+  width: 50%;
+}
+
+.historia .member__info2 h3 {
+  font-size: 55px;
+  color: azure;
+}
+
+.historia .member__info2 p {
+  font-size: 35px;
+  color: azure;
+  text-align: justify;
+}
+
+/*CONTACTO*/
+.btn1, .btn2 {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/*INDEX*/
+.larenga__principal {
+  background-image: url(../img/rengainicio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.larenga__principal .container-titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.larenga__principal .titulo_principal {
+  color: #742112;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 5px 2px #050505;
+  letter-spacing: 5px;
+  padding-top: 15px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 560px) {
+  /*DISCOGRAFIA*/
+  .disc-new {
+    background-color: aliceblue;
+    border: 3px;
+    border-color: blue;
+  }
+  /*HISTORIA*/
+  .frase__historia {
+    color: #742112;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+  }
+  .members__class {
+    width: 800px;
+    background-color: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .members__class img {
+    border-radius: 5%;
+    width: 40%;
+    height: auto;
+    padding: 10px;
+  }
+  .member__info {
+    margin: auto 0;
+    width: 40%;
+    text-align: justify;
+  }
+  .member__info h3 {
+    font-size: 30px;
+    color: azure;
+  }
+  .member__info p {
+    font-size: 25px;
+    color: azure;
+  }
+  .members__class2 {
+    background-color: black;
+    width: 800px;
+    height: 60vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .members__class2 img {
+    border-radius: 5%;
+    width: 40%;
+    height: auto;
+    padding: 10px;
+  }
+  /*GALERIA*/
+  .gallery__container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (150px)[2];
+        grid-template-columns: repeat(2, 150px);
+    grid-auto-rows: 150px;
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+    min-height: 100vh;
+    margin: 20px;
+    margin-bottom: 100px;
+  }
+  .gallery__container :nth-child(1), .gallery__container .gallery__container :nth-child(3) {
+    grid-row: span 1;
+  }
+  .gallery__container :nth-child(2) {
+    grid-column: span 2;
+  }
+  .gallery__container :nth-child(8) {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
 }
 /*# sourceMappingURL=main.css.map */

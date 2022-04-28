@@ -1,0 +1,22 @@
+ /*INDEX*/
+ .larenga__principal {
+    background-image:url(../img/rengainicio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    .container-titulo {
+        display: flex;
+        justify-content: center;
+    }
+    .titulo_principal {
+        color: #742112;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 50px;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 2px 5px 2px #050505;
+        letter-spacing: 5px;
+        padding-top: 15px;
+    }
+}

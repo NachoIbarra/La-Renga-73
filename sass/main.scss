@@ -1,5 +1,10 @@
-@import "variables";
-
+* {
+    padding: 0;
+    margin: 0;
+}
+$colorTitulo: #742112;
+$fontPrincipal: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+/*PARA TODAS LAS PAGINAS*/
 header {
     background-color: #000;
     top: 0;
@@ -18,32 +23,12 @@ header {
         }
     }
 }
-
-/*PAGINA PRINCIPAL CON FOTO*/
-.larenga__principal {
-    background-image: url(../img/rengainicio.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    .container-titulo {
-        display: flex;
-        justify-content: center;
-        .titulo_principal {
-            color: $colorTitulo;
-            font-family: $fontPrincipal;
-            font-size: 50px;
-            text-align: center;
-            text-transform: uppercase;
-            text-shadow: 2px 5px 2px #050505;
-            letter-spacing: 5px;
-            padding-top: 15px;
-        }
-    }
-}
-
-
     /*REDES SOCIALES */
+    $estilos:(
+    color: darkblue,
+    fondo: azure,
+    borde: 1rem 0 0 0,
+    );
 .bar-social {
     position: fixed;
     right: 0;
@@ -54,24 +39,111 @@ header {
     align-items: flex-end;
     z-index: 100;
     .icon {
-        color: darkblue;
+        color: map-get($estilos, color );
         display: flex;
         text-decoration: none;
         padding: .5rem;
         .icon-facebook {
-            background-color: azure;
-            border-radius: 1rem 0 0 0 ;
+            background-color: map-get($estilos, fondo );
+            border-radius: map-get($estilos, borde );
         }
         .icon-instagram {
-            background-color: azure;
+            background-color: map-get($estilos, fondo );
             
         }
         .icon-youtube {
-            background-color: azure;
+            background-color: map-get($estilos, fondo );
         }
         .icon-spotify {
-            background-color: azure;
-            border-radius: 0 0 0 1rem;
+            background-color: map-get($estilos, fondo );
+            border-radius: map-get($estilos, borde );
+        }
+    }
+}
+@import 'discografia';
+@import 'galeria';
+@import 'historia';
+@import 'contacto';
+@import 'index';
+
+@media screen and (min-width:200px) and (max-width:560px){
+    /*DISCOGRAFIA*/
+    .disc-new {
+        background-color: aliceblue;
+        border: 3px;
+        border-color: blue;
+        
+    }
+    /*HISTORIA*/
+    .frase__historia{
+        color: #742112;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 35px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        margin-bottom: 30px;        
+    }
+    .members__class {
+        width: 800px;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        & img {
+            border-radius: 5%;
+            width: 40%;
+            height: auto;
+            padding: 10px;
+        }
+    }
+    .member__info {
+        margin: auto 0;
+        width: 40%;
+        text-align: justify;
+        & h3 {
+            font-size: 30px;
+            color:azure
+        }
+        & p {
+            font-size: 25px;
+            color:azure;
+        }
+    
+    }
+    .members__class2 {
+        background-color: black;
+        width: 800px;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        & img {
+            border-radius: 5%;
+            width: 40%;
+            height: auto;
+            padding: 10px;
+        }
+    }
+    /*GALERIA*/
+    .gallery__container {
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        grid-auto-rows: 150px;
+        grid-gap: 10px;
+        grid-auto-flow: dense;
+        min-height: 100vh;
+        margin: 20px;
+        margin-bottom: 100px;
+        & :nth-child(1), .gallery__container :nth-child(3) {
+            grid-row: span 1;
+        }
+        & :nth-child(2) {
+            grid-column: span 2;
+        }
+        & :nth-child(8) {
+            grid-column: span 2;
+            grid-row: span 1;
         }
     }
 }

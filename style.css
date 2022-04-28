@@ -23,7 +23,7 @@ body {
         font-size: 1.5rem;
         margin: 0px 15px
     }
-    /*PAGINA PRINCIPAL CON FOTO*/
+    /*INDEX*/
     .larenga__principal {
         background-image: url(./img/rengainicio.jpg);
         background-repeat: no-repeat;
@@ -253,10 +253,9 @@ body {
     }
     .nav-item .nav-link {
         padding: 5px;
-        
     }
 
-    /*PAGINA PRINCIPAL CON FOTO*/
+    /*INDEX*/
     .larenga__principal {
         background-image: url(./img/rengainicio.jpg);
         background-repeat: no-repeat;

@@ -1,0 +1,73 @@
+    /*HISTORIA*/
+    .historia {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: azure;
+        .frase__historia{
+            color: #742112;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 50px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            padding: 15px 0 20px 0;
+            margin-bottom: 30px;
+        }
+        .members__class {
+            width: 100%;
+            height: 60vh;
+            background-color: #000;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            & img {
+                border-radius: 15%;
+                width: 40%;
+                height: auto;
+                padding: 50px;
+            }
+        }
+        .member__info {
+            margin: auto 0;
+            width: 50%;
+            & p {
+                font-size: 35px;
+                color:azure;
+                text-align: justify;
+            }
+            & h3 {
+                font-size: 55px;
+                color:azure
+            }
+        }
+        p {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        .members__class2 {
+            background-color: black;
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            & img {
+                border-radius: 15%;
+                width: 40%;
+                height: auto;
+                padding: 50px;
+            }
+        }
+        .member__info2 {
+            margin: auto 0;
+            width: 50%;
+            & h3 {
+                font-size: 55px;
+                color:azure
+            }
+            & p {
+                font-size: 35px;
+                color:azure;
+                text-align: justify;
+            }
+        }
+    }
