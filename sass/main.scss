@@ -23,12 +23,12 @@ header {
         }
     }
 }
-    /*REDES SOCIALES */
-    $estilos:(
+/*REDES SOCIALES */
+$estilos:(
     color: darkblue,
     fondo: azure,
     borde: 1rem 0 0 0,
-    );
+);
 .bar-social {
     position: fixed;
     right: 0;
@@ -63,9 +63,7 @@ header {
 @import 'discografia';
 @import 'galeria';
 @import 'historia';
-@import 'contacto';
 @import 'index';
-
 @media screen and (min-width:200px) and (max-width:560px){
     /*DISCOGRAFIA*/
     .disc-new {
